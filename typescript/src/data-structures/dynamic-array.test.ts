@@ -96,7 +96,7 @@ describe("DynamicArray", () => {
     });
   });
 
-  describe("set & bounds checking", () => {
+  describe.only("set & bounds checking", () => {
     it("overwrites an existing index", () => {
       const a = new DynamicArray<number>(4);
       a.push(1);
