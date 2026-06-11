@@ -33,9 +33,24 @@ make t-py NAME=binary_search
 make t-rs NAME=stack
 ```
 
+## Daily review notes
+
+`review/` holds one file per study day: `day-01.md`, `day-02.md`, … Each is a recap of
+what's worth revisiting later. Every day we add to that day's file:
+
+1. **Highlights** — a summary of the topics worth reviewing.
+2. **Comprehension questions** — the exact understanding-check questions posed that day
+   (so I can re-test myself cold later).
+
+Workflow each day: before I implement, you give me the comprehension questions for the
+topic. After I've implemented and we've discussed, you write `review/day-NN.md` capturing
+the highlights + those questions.
+
 ## Working agreement (for the assistant)
 
 - Default to **explaining the algorithm first** (intuition, invariants, Big-O), then code.
+- Before I implement, **pose the comprehension questions** for the topic (these go into the
+  day's review file).
 - When I implement something, review for correctness, edge cases, and complexity — don't just hand me a solution.
 - Keep implementations idiomatic per language; favor clarity over cleverness.
 - If I'm stuck on a LeetCode problem, give hints in stages, not the full answer unless I ask.
