@@ -1,0 +1,17 @@
+[project]
+name = "coding-interview-py"
+version = "1.0.0"
+description = "DS&A implementations in Python"
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+# Co-locate tests next to implementations as *_test.py
+python_files = ["*_test.py"]
+testpaths = ["data_structures", "algorithms"]
+addopts = "-q"
+
+[tool.setuptools]
+packages = ["data_structures", "algorithms"]

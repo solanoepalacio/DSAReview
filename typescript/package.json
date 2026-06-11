@@ -1,0 +1,17 @@
+{
+  "name": "coding-interview-ts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DS&A implementations in TypeScript",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}

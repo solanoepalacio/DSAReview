@@ -1,0 +1,10 @@
+[package]
+name = "coding_interview"
+version = "1.0.0"
+edition = "2021"
+description = "DS&A implementations in Rust"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
