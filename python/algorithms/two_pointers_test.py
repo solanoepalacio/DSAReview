@@ -104,6 +104,14 @@ def test_max_water_best_pair_is_the_outer_walls():
     assert max_water([4, 1, 2, 1, 4]) == 16
 
 
+def test_max_water_best_pair_is_interior():
+    # discriminating case: the optimal pair touches NEITHER end.
+    # the two 8s in the middle give min(8, 8) * 1 = 8; any pair using an end
+    # wall (height 2) can do at most min(2, .) * 3 = 6. Catches the mistake of
+    # only ever measuring against a single fixed wall.
+    assert max_water([2, 8, 8, 2]) == 8
+
+
 def test_max_water_uniform_heights():
     # equal walls -> widest pair wins: 5 * (4 - 0)
     assert max_water([5, 5, 5, 5, 5]) == 20

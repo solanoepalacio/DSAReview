@@ -80,14 +80,21 @@ def max_water(heights: Sequence[int]) -> int:
     if len(heights) < 2:
         return 0
 
-    highest = heights[len(heights) - 1]
-
-    pointer = 0
+    left = 0
+    right = len(heights) - 1
     max_area = 0
-    while pointer < len(heights):
-        distance = len(heights) - 1 - pointer
-        max_area = max(max_area, area(highest, heights[pointer], distance))
-        pointer += 1
+    while left <= right:
+        if left == right:
+            break
+        distance = right - left
+        left_height = heights[left]
+        right_height = heights[right]
+        max_area = max(max_area, area(left_height, right_height, distance))
+
+        if left_height < right_height:
+            left += 1
+        else:
+            right -= 1
     return max_area
 
 
