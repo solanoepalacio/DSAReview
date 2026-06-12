@@ -16,13 +16,13 @@ Easy/Medium problems.
 - **Implement:**
   - [x] resizable dynamic array (push, pop, get, set, grow-by-doubling) → `typescript/src/data-structures/dynamic-array.ts`
 - **LeetCode:**
-  - [ ] Two Sum (E)
-  - [ ] Contains Duplicate (E)
+  - [x] Two Sum (E)
+  - [x] Contains Duplicate (E)
   - [ ] Best Time to Buy and Sell Stock (E)
 - **Top 150:**
-  - [ ] 88 Merge Sorted Array (E)
-  - [ ] 27 Remove Element (E)
-  - [ ] 26 Remove Duplicates from Sorted Array (E)
+  - [x] 88 Merge Sorted Array (E)
+  - [x] 27 Remove Element (E)
+  - [x] 26 Remove Duplicates from Sorted Array (E)
   - [ ] 80 Remove Duplicates from Sorted Array II (M)
   - [ ] 169 Majority Element (E)
   - [ ] 189 Rotate Array (M)
@@ -33,18 +33,18 @@ Easy/Medium problems.
 - **Theory:** opposite-ends vs. same-direction pointers. Why sorting often unlocks it.
   Invariant: what each pointer guarantees about the space it has passed.
 - **Implement:**
-  - [ ] two-pointer helpers — reverse in place, remove duplicates from sorted array → `algorithms/two-pointers`
+  - [x] two-pointer helpers — reverse in place, remove duplicates from sorted array → `algorithms/two-pointers`
 - **LeetCode:**
-  - [ ] Valid Palindrome (E)
-  - [ ] Two Sum II – Sorted (M)
-  - [ ] 3Sum (M)
-  - [ ] Container With Most Water (M)
+  - [x] Valid Palindrome (E)
+  - [x] Two Sum II – Sorted (M)
+  - [x] 3Sum (M)
+  - [x] Container With Most Water (M)
 - **Top 150:**
-  - [ ] 125 Valid Palindrome (E)
-  - [ ] 392 Is Subsequence (E)
-  - [ ] 167 Two Sum II (M)
-  - [ ] 11 Container With Most Water (M)
-  - [ ] 15 3Sum (M)
+  - [x] 125 Valid Palindrome (E)
+  - [x] 392 Is Subsequence (E)
+  - [x] 167 Two Sum II (M)
+  - [x] 11 Container With Most Water (M)
+  - [x] 15 3Sum (M)
 
 ## Day 3 (Wed) — Sliding window
 
