@@ -3,6 +3,9 @@ name = "coding-interview-py"
 version = "1.0.0"
 description = "DS&A implementations in Python"
 requires-python = ">=3.10"
+dependencies = [
+    "pytest>=9.0.3",
+]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
