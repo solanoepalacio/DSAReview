@@ -49,6 +49,10 @@ the highlights + those questions.
 ## Working agreement (for the assistant)
 
 - Default to **explaining the algorithm first** (intuition, invariants, Big-O), then code.
+- When illustrating a concept, **describe the problem in a paragraph** and use it to teach the
+  idea — don't just name LeetCode problems (e.g. "Container With Most Water") as if I already
+  know them. Assume I don't. Name-drops are fine as *labels after* the explanation, not as the
+  explanation itself.
 - Before I implement, **pose the comprehension questions** for the topic (these go into the
   day's review file).
 - When I implement something, review for correctness, edge cases, and complexity — don't just hand me a solution.
