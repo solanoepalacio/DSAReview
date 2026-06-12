@@ -4,47 +4,83 @@ The highest-leverage week for senior backend roles — dependency resolution, ro
 "is X reachable / connected" problems are everywhere (including blockchain tx graphs and
 agent task graphs). Nail the representations and the four core algorithms.
 
+> **Top 150** numbers below refer to LeetCode's "Top Interview 150" study plan.
+> Check off `[x]` as you go.
+
 ---
 
 ## Day 16 (Mon) — Representations & DFS
 
 - **Theory:** adjacency list vs. matrix (space/time trade-offs), directed vs. undirected,
   weighted vs. unweighted. DFS on graphs + the `visited` set (graphs have cycles, trees don't).
-- **Implement:** graph (adjacency list) + DFS (recursive + iterative).
-  → `data-structures/graph` and `algorithms/graph-dfs`
-- **LeetCode:** Number of Islands (M), Clone Graph (M), Max Area of Island (M).
+- **Implement:**
+  - [ ] graph (adjacency list) + DFS (recursive + iterative) → `data-structures/graph`, `algorithms/graph-dfs`
+- **LeetCode:**
+  - [ ] Number of Islands (M)
+  - [ ] Clone Graph (M)
+  - [ ] Max Area of Island (M)
+- **Top 150:**
+  - [ ] 200 Number of Islands (M)
+  - [ ] 130 Surrounded Regions (M)
+  - [ ] 133 Clone Graph (M)
+  - [ ] 399 Evaluate Division (M)
 
 ## Day 17 (Tue) — BFS & shortest path (unweighted)
 
 - **Theory:** BFS gives shortest path in an unweighted graph. Multi-source BFS. Grid as graph.
-- **Implement:** graph/grid BFS (distance from source(s)).
-  → `algorithms/graph-bfs`
-- **LeetCode:** Rotting Oranges (M), Walls and Gates (M), Word Ladder (H).
+- **Implement:**
+  - [ ] graph/grid BFS (distance from source(s)) → `algorithms/graph-bfs`
+- **LeetCode:**
+  - [ ] Rotting Oranges (M)
+  - [ ] Walls and Gates (M)
+  - [ ] Word Ladder (H)
+- **Top 150:**
+  - [ ] 909 Snakes and Ladders (M)
+  - [ ] 433 Minimum Genetic Mutation (M)
+  - [ ] 127 Word Ladder (H)
 
 ## Day 18 (Wed) — Topological sort
 
 - **Theory:** DAGs, topological order, cycle detection. Kahn's algorithm (in-degree + queue)
   vs. DFS post-order. The "course schedule / build order" pattern.
-- **Implement:** topological sort (Kahn's *and* DFS-based).
-  → `algorithms/topological-sort`
-- **LeetCode:** Course Schedule (M), Course Schedule II (M), Alien Dictionary (H).
+- **Implement:**
+  - [ ] topological sort (Kahn's *and* DFS-based) → `algorithms/topological-sort`
+- **LeetCode:**
+  - [ ] Course Schedule (M)
+  - [ ] Course Schedule II (M)
+  - [ ] Alien Dictionary (H)
+- **Top 150:**
+  - [ ] 207 Course Schedule (M)
+  - [ ] 210 Course Schedule II (M)
 
 ## Day 19 (Thu) — Union-Find (disjoint set)
 
 - **Theory:** DSU with union-by-rank + path compression → near-O(1) amortized. Connectivity
   and cycle detection in undirected graphs; Kruskal's MST building block.
-- **Implement:** union-find (find, union, connected) with both optimizations.
-  → `data-structures/union-find`
-- **LeetCode:** Number of Connected Components in an Undirected Graph (M), Redundant Connection (M),
-  Accounts Merge (M).
+- **Implement:**
+  - [ ] union-find (find, union, connected) with both optimizations → `data-structures/union-find`
+- **LeetCode:**
+  - [ ] Number of Connected Components in an Undirected Graph (M)
+  - [ ] Redundant Connection (M)
+  - [ ] Accounts Merge (M)
+- **Top 150:**
+  - [ ] 399 Evaluate Division (M) — redo with DSU
+  - [ ] 130 Surrounded Regions (M) — redo with DSU
+- (Top 150 has no dedicated DSU section, so the LeetCode problems above are the better drill
+  for the structure itself.)
 
 ## Day 20 (Fri) — Weighted shortest paths (Dijkstra) + review
 
 - **Theory:** Dijkstra with a min-heap, why it needs non-negative weights. Relaxation.
   (Mention Bellman-Ford for negative edges, A* for heuristics — read, don't implement yet.)
-- **Implement:** Dijkstra (adjacency list + binary heap).
-  → `algorithms/dijkstra`
-- **LeetCode:** Network Delay Time (M), Cheapest Flights Within K Stops (M), Path With Minimum Effort (M).
+- **Implement:**
+  - [ ] Dijkstra (adjacency list + binary heap) → `algorithms/dijkstra`
+- **LeetCode:**
+  - [ ] Network Delay Time (M)
+  - [ ] Cheapest Flights Within K Stops (M)
+  - [ ] Path With Minimum Effort (M)
+- **Top 150:** no pure-Dijkstra problem is in Top 150 — use the LeetCode problems above; they
+  cover Dijkstra, Bellman-Ford-with-K-stops, and Dijkstra-on-a-grid respectively.
 - **Review:** redo topo sort (Kahn's) and union-find blank.
 
 ---
